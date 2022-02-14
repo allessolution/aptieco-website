@@ -91,7 +91,7 @@ section{
     justify-content: space-between;
     position: fixed;
     top:0; left:0; right:0;
-    padding:3rem 9%;
+    padding: 1rem 9%;
     z-index: 1000;
     background: #fff;
 }
@@ -129,7 +129,7 @@ section{
 }
 
 .header.active{
-    padding:2rem 9%;
+    padding:1rem 9%;
     box-shadow: var(--box-shadow);
 }
 
@@ -649,7 +649,7 @@ section{
     }
 
     .header{
-        padding:2rem;
+        padding:0rem 2rem;
     }
 
     .header.active{
