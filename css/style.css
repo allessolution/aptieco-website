@@ -114,6 +114,12 @@ section{
     color:var(--black);
 }
 
+
+.header .navbar .active{
+    color:var(--blue);
+}
+
+
 .header .navbar a:hover{
     color:var(--blue);
 }
@@ -401,6 +407,56 @@ section{
     color:#eee;
 }
 
+
+.all-courses .box-container{
+    display: grid;
+    margin-top: 8rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.all-courses .box-container .box{
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    text-align: center;
+}
+
+.all-courses .box-container .box i{
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background:white;
+    color:var(--black);
+}
+
+.all-courses .box-container .box h3{
+    font-size: 2.2rem;
+    color:var(--black);
+}
+
+.all-courses .box-container .box p{
+    line-height: 1.8;
+    padding:1rem 0;
+    font-size: 1.4rem;
+    color:var(--light-color);
+}
+.all-courses .box-container .box img{
+    height: 15rem;
+}
+
+.all-courses .box-container .box:hover img{
+    transform: scale(.9);
+}
+
+.all-courses .box-container .box .content .price{
+    font-size: 2.5rem;
+    color:var(--black);
+}
 .featured .featured-slider{
     padding:1rem;
     padding-bottom: 4rem;
@@ -441,6 +497,70 @@ section{
     color:var(--black);
 }
 
+
+.all-members{
+    margin-top: 8rem;
+    text-align: center;
+}
+.all-members h1{
+    font-size: 4rem;
+}
+.all-members p{
+    font-size: 1.5rem;
+}
+.all-members h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.all-members .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.all-members .box-container .box{
+    padding:2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    text-align: center;
+}
+
+.all-members .box-container .box i{
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background:white;
+    color:var(--black);
+}
+
+.all-members .box-container .box h3{
+    font-size: 2.2rem;
+    color:var(--black);
+}
+
+.all-members .box-container .box p{
+    line-height: 1.8;
+    padding:1rem 0;
+    font-size: 1.4rem;
+    color:var(--light-color);
+}
+.all-members .box-container .box img{
+    height: 15rem;
+    border-radius: 50px;
+}
+
+.all-members .box-container .box:hover img{
+    transform: scale(.9);
+}
+
+.all-members .box-container .box .content .post{
+    font-size: 1.5rem;
+    color:var(--black);
+}
 
 
 .newsletter{
