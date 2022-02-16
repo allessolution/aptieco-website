@@ -504,6 +504,7 @@ section{
 }
 .all-members h1{
     font-size: 4rem;
+    color: var(--black);
 }
 .all-members p{
     font-size: 1.5rem;
@@ -511,6 +512,7 @@ section{
 .all-members h2{
     font-size: 3rem;
     text-align: center;
+    color: var(--blue);
 }
 .all-members .box-container{
     display: grid;
