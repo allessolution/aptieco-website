@@ -552,7 +552,7 @@ section{
 }
 .all-members .box-container .box img{
     height: 15rem;
-    border-radius: 50px;
+    border-radius: 100%;
 }
 
 .all-members .box-container .box:hover img{
