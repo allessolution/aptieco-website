@@ -708,7 +708,7 @@ section{
 
 .footer{
     background: var(--light-blue);
-    padding-bottom: 8rem;
+    padding-bottom: 8px;
 }
 
 .footer .box-container{

@@ -1,0 +1,38 @@
+.panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 10px;
+}
+body{
+  background-color:#ffff;
+}
+.panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.panel-title > a:hover, 
+.panel-title > a:active, 
+.panel-title > a:focus  {
+    text-decoration:none;
+}
+.panel-heading {
+    padding: 10px 10px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 43x;
+}
+.panel {
+    margin-bottom: 20px !important;
+    background-color: #ffffff;
+ 
+}
+.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    color: inherit;
+    background-color: #ffff;
+    text-align: left;
+    color: #fff;
+}
