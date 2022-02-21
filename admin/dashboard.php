@@ -1,9 +1,9 @@
 <!-- session check -->
 <?php 
-//   session_start();
-//   if (empty($_SESSION['user'])) {
-//     header('location:./');
-//   }
+  session_start();
+  if (empty($_SESSION['user'])) {
+    header('location:./');
+  }
 include 'include/header.php';
 ?>
 <body>

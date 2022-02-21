@@ -40,26 +40,42 @@ body{
     background-color: var(--blue);
 }
 /* nav bar */
-.navbar{
-    background-color: var(--blue);
-}
-.navbar a{
-    color: var(--white);
-}
-.navbar a:hover{
+.navbar i{
+    padding: .5rem;
+    border-radius: 5px;
     color: var(--black);
+    border: solid 1px var(--black);
+}
+.navbar i:hover{
+    color: var(--white);
+    background-color: #130f40;
 }
 /* form */
 .form{
-    padding: 1rem 30rem;
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
 }
 /* alert css */
-.alert-msg{
-    margin: 1rem 30rem;
+.alert-box{
+    display: grid;
+    margin: 1rem 1rem 0rem 1rem;
+    justify-items: center;
 }
 /* footer */
 .footer p{
     background-color: var(--blue);
     padding: 1rem 0rem;
     text-align: center;
+}
+
+
+/* media tags */
+@media screen and (max-width:576px){
+    .form{
+        display: block;
+    }
+    .alert-box{
+        display: block;
+    }
 }

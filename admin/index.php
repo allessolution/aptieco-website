@@ -9,17 +9,19 @@
 <body>
 <?php include "include/nav.php"?>
 <div class="form">
-<form action="index.php" method="POST">
-  <div class="mb-3">
-    <label class="form-label">Username</label>
-    <input type="text" name="username" class="form-control">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <form action="./" method="POST">
+      <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input type="text" name="username" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" name="pwd" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
   </div>
-  <div class="mb-3">
-    <label class="form-label">Password</label>
-    <input type="password" name="pwd" class="form-control">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 </div>
 <?php include "include/footer.php"?>
 </body>
