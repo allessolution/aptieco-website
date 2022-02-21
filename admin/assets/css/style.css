@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --blue: #00a1ff;
+    --light-blue: #43b4ff;
+    --black:#130f40;
+    --light-color:rgb(48, 48, 48);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+    --white:#e4e4e4;
+}
+/* cutom scroll bar */
+::-webkit-scrollbar {
+    width: 9px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 50px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    text-decoration: none;
+}
+body{
+    color: var(--black);
+}
+.btn{
+    border: solid 3px var(--blue);
+    background-color: white;
+    color: var(--black);
+}
+.btn:hover{
+    border: solid 3px var(--blue);
+    background-color: var(--blue);
+}
+/* nav bar */
+.navbar{
+    background-color: var(--blue);
+}
+.navbar a{
+    color: var(--white);
+}
+.navbar a:hover{
+    color: var(--black);
+}
+/* form */
+.form{
+    padding: 1rem 30rem;
+}
+/* alert css */
+.alert-msg{
+    margin: 1rem 30rem;
+}
+/* footer */
+.footer p{
+    background-color: var(--blue);
+    padding: 1rem 0rem;
+    text-align: center;
+}
