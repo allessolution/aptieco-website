@@ -775,7 +775,7 @@ section{
     }
 
     .header.active{
-        padding:2rem;
+        padding:0rem 2rem;
     }
 
     section{

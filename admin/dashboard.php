@@ -6,6 +6,12 @@
   }
 include 'include/header.php';
 ?>
+<?php 
+require_once 'include/db.php';
+$query=$db->query('SELECT * from courses');
+$data=$query->fetchall();
+$conut=count($data);
+?>
 <body>
     <?php include 'include/nav.php';?>
     <div class="dashboard">
@@ -18,7 +24,7 @@ include 'include/header.php';
             <div class="card-body text-center">
               <h1 class="card-title"><i class="fa-solid fa-book"></i></h1>
               <p class="card-text">Number Of Courses</p>
-              <h2>10</h2>
+              <h2><?php echo $conut ?></h2>
             </div>
           </div>
         </div>

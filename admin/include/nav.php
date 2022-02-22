@@ -14,6 +14,9 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="add_course.php">Add Course</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="courses.php">All Courses</a>
+          </li>
         </ul>
         <a href="logout.php">
           <i class="fa-solid fa-right-from-bracket"></i>

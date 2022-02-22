@@ -39,9 +39,20 @@ body{
     background-color: white;
     color: var(--black);
 }
+.btn-danger{
+    border: solid 3px red;
+    background-color: white;
+    color: red;
+}
 .btn:hover{
     border: solid 3px var(--blue);
     background-color: var(--blue);
+    color: white;
+}
+.btn-danger:hover{
+    border: solid 3px red;
+    background-color: red;
+    color: white;
 }
 /* nav bar */
 .navbar i{
@@ -69,6 +80,10 @@ body{
 
 /*add couse section */
 .add-course{
+    margin: 1rem;
+}
+/* couses table */
+.custom-table{
     margin: 1rem;
 }
 /* footer */
