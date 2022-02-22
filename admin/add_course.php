@@ -26,30 +26,22 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   $date=date("Y-m-d H:i:s");
   $image=$_FILES["fileToUpload"]["name"];
   $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
-  // Check if image file is a actual image or fake image
-  if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-      alert2("File is an image - " . $check["mime"] . ".",'danger');
-      $uploadOk = 1;
-    } else {
-      alert2("File is not an image.",'danger');
-      $uploadOk = 0;
-    }
-  }
-  elseif (empty($c_heading) or empty($c_crfee) or empty($c_cfee) or empty($c_duration) or empty($image)  ) {
+  if (empty($c_heading) or empty($c_crfee) or empty($c_cfee) or empty($c_duration) or empty($image)  ) {
     alert2('All fields are required','danger');
+    $error[]=1;
   }
   // Check if file already exists
   else if (file_exists($target_file)) {
     alert2("Sorry, file of this name already exists .",'danger');
     $uploadOk = 0;
+    $error[]=1;
   }
 
   // Check file size
   else if ($_FILES["fileToUpload"]["size"] > 2000000) {
    alert2("Sorry, your file is too large.",'danger');
     $uploadOk = 0;
+    $error[]=1;
   }
 
   // Allow certain file formats
@@ -57,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   && $imageFileType != "gif" ) {
     alert2("Sorry, only JPG, JPEG, PNG & GIF files are allowed.",'danger');
     $uploadOk = 0;
+    $error[]=1;
   }
   // Check if $uploadOk is set to 0 by an error
   else if ($uploadOk == 0) {
@@ -80,6 +73,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
       header( "refresh:1;url=view_courses.php" );
     } else {
       alert2("Sorry, there was an error in uploading data",'danger');
+      $error[]=1;
     }
   }
 }
@@ -94,19 +88,19 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
         <input class="form-control" name="fileToUpload" type="file">
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="c_heading" placeholder="Course Heading">
+        <input type="text" class="form-control" name="c_heading" value="<?php if(isset($error)){ echo $_POST['c_heading'];}?>" placeholder="Course Heading">
         <label for="floatingInput">Course Heading</label>
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="c_rfee" placeholder="Course Registration Fee">
+        <input type="text" class="form-control" name="c_rfee" value="<?php if(isset($error)){ echo $_POST['c_rfee'];}?>" placeholder="Course Registration Fee">
         <label for="floatingInput">Course Registration Fee <i class="fa-solid fa-indian-rupee-sign"></i></label>
       </div>
       <div class="form-floating mb-3">
-        <input type="text" class="form-control" name="c_fee" placeholder="Course Fee">
+        <input type="text" class="form-control" name="c_fee" value="<?php if(isset($error)){ echo $_POST['c_fee'];}?>" placeholder="Course Fee">
         <label for="floatingInput">Course Fee <i class="fa-solid fa-indian-rupee-sign"></i></label>
       </div>
       <div class="form-floating mb-3">
-        <textarea class="form-control" name="c_desc" placeholder="Course Description" style="height: 350px"></textarea>
+        <textarea class="form-control" name="c_desc" placeholder="Course Description" style="height: 350px"><?php if(isset($error)){ echo $_POST['c_desc'];}?></textarea>
         <label for="floatingTextarea">Course Description</label>
       </div>
       <div class="form-floating mb-3">
