@@ -19,16 +19,20 @@
 }
 ::-webkit-scrollbar-thumb {
     background: var(--blue);
-    border-radius: 50px;
+    border-radius: 0px;
 }
 
 *{
     font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
+    margin:0; 
+    padding:0;
     text-decoration: none;
 }
 body{
     color: var(--black);
+}
+.row{
+    margin: 0;
 }
 .btn{
     border: solid 3px var(--blue);
@@ -62,11 +66,17 @@ body{
     margin: 1rem 1rem 0rem 1rem;
     justify-items: center;
 }
+
+/*add couse section */
+.add-course{
+    margin: 1rem;
+}
 /* footer */
 .footer p{
     background-color: var(--blue);
     padding: 1rem 0rem;
     text-align: center;
+    margin-bottom: 0rem;
 }
 
 
