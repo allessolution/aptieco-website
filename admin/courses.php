@@ -14,7 +14,21 @@ $query=$db->query('SELECT * from courses');
     function edit(sno) {
         window.location.href="edit_courses.php?edit="+sno
     }
+    function del(sno) {
+        if (confirm('Do you Really Want to delete?')) {
+            window.location.href="courses.php?del="+sno
+        }
+    }
 </script>
+<?php 
+    if (isset($_GET['del'])) {
+        $query=$db->prepare('DELETE from courses where id=?');
+        $query->execute(array(
+            $_GET['del']
+        ));
+        header('location:courses.php');
+    }
+?>
 <body>
     <?php include 'include/nav.php';?>
     <div class="table-responsive custom-table">
@@ -37,7 +51,7 @@ $query=$db->query('SELECT * from courses');
                         <td><?php echo $data['c_addedby'] ?></td>
                         <td>
                             <button class="btn" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                            <button class="btn btn-danger" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></button>
                         </td>
                     </tr>
                 <?php $sno=$sno+1; }?>
