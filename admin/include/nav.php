@@ -14,8 +14,13 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="courses.php">All Courses</a>
           </li>
+          <?php if ($_SESSION['user']!='editor') { ?>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="view_admins.php">All Admins</a>
+            <a class="nav-link" aria-current="page" href="view_editors.php">All Editors</a>
+          </li>
+          <?php } ?>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="change_password.php">Change Password</a>
           </li>
         </ul>
         <a href="logout.php">

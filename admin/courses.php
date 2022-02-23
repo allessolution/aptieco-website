@@ -54,7 +54,7 @@ $query=$db->query('SELECT * from courses');
     <div class="table-responsive custom-table">
         <center>
             <h2>All Courses</h2>
-            <a href="add_course.php"><button class="btn">Add New Course</button></a>
+            <a href="add_course.php"><button class="btn"><i class="fa-solid fa-circle-plus"></i> Add New Course</button></a>
         </center>
         <table class="table">
             <thead>
@@ -76,15 +76,15 @@ $query=$db->query('SELECT * from courses');
                         <td><?php echo $data['c_addedby'] ?></td>
                         <td>
                             <?php if ($data['featured']==0) {?>
-                                <a style="font-size:1.6rem; color:red;" onclick=featured(<?php echo $data['id'] ?>)><i class="fa-solid fa-toggle-off"></i></a>
+                                <a style="font-size:1.6rem; color:red; cursor:pointer;" onclick=featured(<?php echo $data['id'] ?>)><i class="fa-solid fa-toggle-off"></i></a>
                             <?php } ?>
                             <?php if ($data['featured']==1) {?>
-                                <a style="font-size:1.6rem; color:limegreen;" onclick=nofeatured(<?php echo $data['id'] ?>)><i class="fa-solid fa-toggle-on"></i></a>
+                                <a style="font-size:1.6rem; color:limegreen; cursor:pointer;" onclick=nofeatured(<?php echo $data['id'] ?>)><i class="fa-solid fa-toggle-on"></i></a>
                             <?php } ?>
                         </td>
                         <td>
-                            <a style="font-size:1.6rem; color:#00a1ff;" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;
-                            <a style="font-size:1.6rem; color:red;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
+                            <a style="font-size:1.6rem; color:#00a1ff; cursor:pointer;" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;
+                            <a style="font-size:1.6rem; color:red; cursor:pointer;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 <?php $sno=$sno+1; }?>

@@ -7,10 +7,11 @@
             <span>Aptieco</span></a>
 
         <nav class="navbar">
-            <a href="./" class="active">home</a>
+            <!-- class="active" will used with jquery validation -->
+            <a href="./">home</a>
             <a href="./courses.php">courses</a>
             <a href="./contactus.php">contact</a>
-            <a href="./ourteam.php">About</a>
+            <a href="./aboutus.php">About</a>
         </nav>
 
         <!-- <div id="login-btn">

@@ -1,7 +1,7 @@
 <!-- session check -->
 <?php 
   session_start();
-  if (empty($_SESSION['user'])) {
+  if (empty($_SESSION['user']) || $_SESSION['user']=='editor') {
     header('location:./');
   }
 include 'include/header.php';
@@ -16,7 +16,7 @@ $query=$db->query('SELECT * from admin');
     }
     function del(sno) {
         if (confirm('Do you Really Want to delete?')) {
-            window.location.href="view_admins.php?del="+sno
+            window.location.href="view_editors.php?del="+sno
         }
     }
 </script>
@@ -26,7 +26,7 @@ $query=$db->query('SELECT * from admin');
         $query->execute(array(
             $_GET['del']
         ));
-        header('location:view_admins.php');
+        header('location:view_editors.php');
     }
 ?>
 <body>
@@ -34,7 +34,7 @@ $query=$db->query('SELECT * from admin');
     <div class="table-responsive custom-table">
         <center>
             <h2>All Admins</h2>
-            <a href="add_admin.php"><button class="btn">Add New Admin</button></a>
+            <a href="add_editor.php"><button class="btn"><i class="fa-solid fa-circle-plus"></i> Add New Editor</button></a>
         </center>
         <table class="table">
             <thead>
@@ -47,18 +47,17 @@ $query=$db->query('SELECT * from admin');
             </thead>
             <tbody>
                 <?php
-                $sno=1;
+                $sno=0;
                 while ($data=$query->fetch()) { ?>
                     <tr>
+                    <?php if ($data['id']!=1) { ?>
                         <th scope="row"><?php echo $sno; ?></th>
                         <td><?php echo $data['username'] ?></td>
-                        <td><?php echo $data['type'] ?></td>
-                        <?php if ($data['id']!=1) { ?>
-                            <td>
-                                <a style="font-size:1.6rem; color:#00a1ff;" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;
-                                <a style="font-size:1.6rem; color:red;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
-                            </td>
-                        <?php }?>
+                        <td><?php echo $data['type'] ?></td>        
+                        <td>
+                            <a style="font-size:1.6rem; color:red; cursor:pointer;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                    <?php }?>
                     </tr>
                 <?php $sno=$sno+1; }?>
             </tbody>

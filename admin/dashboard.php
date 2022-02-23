@@ -35,8 +35,8 @@ function size($table_name)
           <div class="card h-100">
             <div class="card-body text-center">
               <h1 class="card-title"><i class="fa-solid fa-user"></i></h1>
-              <p class="card-text">Number Of Admins</p>
-              <h2><?php echo size('admin') ?></h2>
+              <p class="card-text">Number Of Editors</p>
+              <h2><?php echo size('admin')-1 ?></h2>
             </div>
           </div>
         </div>

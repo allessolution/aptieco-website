@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
     if ($count>0) {
       $_SESSION['user']=$data[0]['type'];
       $_SESSION['username']=$data[0]['username'];
+      $_SESSION['id']=$data[0]['id'];
       alert('Login Sucuessfully!','success');
       header( "refresh:1;url=dashboard.php" );
     } else {
