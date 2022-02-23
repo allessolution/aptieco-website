@@ -726,19 +726,19 @@ section{
 .footer .box-container .box h3{
     font-size: 2.2rem;
     padding:1rem 0;
-    color:#ffffff;
+    color: var(--black);
 }
 
 .footer .box-container .box a{
     display: block;
     font-size: 1.4rem;
     padding:1rem 0;
-    color:var(--white);
+    color:var(--light-color);
 }
 
 .footer .box-container .box a i{
     padding-right: .5rem;
-    color:var(--white);
+    color:var(--black);
 }
 
 .footer .box-container .box a:hover i{
@@ -752,7 +752,7 @@ section{
     margin-top: 2rem;
     border-top: var(--border);
     font-size: 2rem;
-    color:var(--white);
+    color:var(--black);
 }
 
 

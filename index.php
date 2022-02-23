@@ -1,4 +1,8 @@
 <?php include 'include/header.php' ?>
+<?php 
+include 'include/db.php';
+$query=$db->query('SELECT * from courses where featured=1');
+?>
 <body>
     <?php include 'include/nav.php' ?>
     <section class="home" id="home">
@@ -52,7 +56,7 @@
 
     <section class="courses" id="courses">
 
-        <h1 class="heading"> High-Rated <span>bootcamps</span> </h1>
+        <h1 class="heading"> Popular <span>Courses</span> </h1>
 
         <div class="swiper courses-slider">
 
@@ -155,28 +159,29 @@
 
     <section class="featured" id="featured">
 
-        <h1 class="heading"><span>#featured</span> Bootcamps</h1>
+        <h1 class="heading"><span>#featured</span> Courses</h1>
 
         <div class="swiper featured-slider">
 
             <div class="swiper-wrapper">
-                <!-- required for loop -->
-                <div class="swiper-slide box">
-                    <img src="assets/image/courses/WEB DEVELOPMENT.png" alt="">
-                    <div class="content">
-                        <h3>Web Development</h3>
-                        <p> Last updated: 17 Feb,2022</p>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                <?php while ($data=$query->fetch()) {?>
+                    <div class="swiper-slide box">
+                        <img src="assets/image/courses/<?php echo $data['image'] ?>" alt="">
+                        <div class="content">
+                            <h3><?php echo $data['c_heading'] ?></h3>
+                            <p> Last updated: <?php echo $data['date'] ?></p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="price">₹<?php echo $data['c_fee'] ?>/-</div>
+                            <a href="courses.html"><button class="btn">Explore course</button></a>
                         </div>
-                        <div class="price">₹999/-</div>
-                        <a href="courses.html"><button class="btn">Explore course</button></a>
                     </div>
-                </div>
+                <?php }?>
 
             </div>
 

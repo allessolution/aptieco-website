@@ -14,9 +14,9 @@
             <div class="box">
                 <h3>#quick links</h3>
                 <a href="./"><i class="fas fa-arrow-right"></i>home</a>
-                <a href="./courses.html"><i class="fas fa-arrow-right"></i>courses</a>
-                <a href="./ourteam.html"><i class="fas fa-arrow-right"></i>About Us</a>
-                <a href="./contactus.html"><i class="fas fa-arrow-right"></i>contact us</a>
+                <a href="./courses.php"><i class="fas fa-arrow-right"></i>courses</a>
+                <a href="./ourteam.php"><i class="fas fa-arrow-right"></i>About Us</a>
+                <a href="./contactus.php"><i class="fas fa-arrow-right"></i>contact us</a>
             </div>
 
             <div class="box">
