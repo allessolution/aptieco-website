@@ -12,7 +12,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD']=='POST') {
   include 'include/functions.php';
-  $target_dir = "../image/courses/";
+  $target_dir = "../assets/image/courses/";
   $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
   $uploadOk = 1;
   $c_heading=$_POST['c_heading'];
@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
         $image
       ));
       alert2('Course Added Sucessfully','success');
-      header( "refresh:1;url=view_courses.php" );
+      header( "refresh:1;url=courses.php" );
     } else {
       alert2("Sorry, there was an error in uploading data",'danger');
       $error[]=1;
@@ -181,6 +181,3 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     </form>
   </div>
   <?php include 'include/footer.php';?>
-</body>
-
-</html>

@@ -12,10 +12,10 @@
             <a class="nav-link" aria-current="page" href="./">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="add_course.php">Add Course</a>
+            <a class="nav-link" aria-current="page" href="courses.php">All Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="courses.php">All Courses</a>
+            <a class="nav-link" aria-current="page" href="view_admins.php">All Admins</a>
           </li>
         </ul>
         <a href="logout.php">

@@ -19,6 +19,12 @@ $query=$db->query('SELECT * from courses');
             window.location.href="courses.php?del="+sno
         }
     }
+    function featured(sno) {
+        window.location.href="courses.php?feature="+sno
+    }
+    function nofeatured(sno) {
+        window.location.href="courses.php?remove_feature="+sno
+    }
 </script>
 <?php 
     if (isset($_GET['del'])) {
@@ -28,16 +34,35 @@ $query=$db->query('SELECT * from courses');
         ));
         header('location:courses.php');
     }
+    if (isset($_GET['feature'])) {
+        $query=$db->prepare('UPDATE courses SET featured=1 where id=?');
+        $query->execute(array(
+            $_GET['feature']
+        ));
+        header('location:courses.php');
+    }
+    if (isset($_GET['remove_feature'])) {
+        $query=$db->prepare('UPDATE courses SET featured=0 where id=?');
+        $query->execute(array(
+            $_GET['remove_feature']
+        ));
+        header('location:courses.php');
+    }
 ?>
 <body>
     <?php include 'include/nav.php';?>
     <div class="table-responsive custom-table">
+        <center>
+            <h2>All Courses</h2>
+            <a href="add_course.php"><button class="btn">Add New Course</button></a>
+        </center>
         <table class="table">
             <thead>
                 <tr>
                 <th scope="col">S.no</th>
                 <th scope="col">Course Heading</th>
                 <th scope="col">Added By</th>
+                <th scope="col">Featured</th>
                 <th scope="col">Actions</th>
                 </tr>
             </thead>
@@ -50,8 +75,16 @@ $query=$db->query('SELECT * from courses');
                         <td><?php echo $data['c_heading'] ?></td>
                         <td><?php echo $data['c_addedby'] ?></td>
                         <td>
-                            <button class="btn" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></button>
-                            <button class="btn btn-danger" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></button>
+                            <?php if ($data['featured']==0) {?>
+                                <a style="font-size:1.6rem; color:red;" onclick=featured(<?php echo $data['id'] ?>)><i class="fa-solid fa-toggle-off"></i></a>
+                            <?php } ?>
+                            <?php if ($data['featured']==1) {?>
+                                <a style="font-size:1.6rem; color:limegreen;" onclick=nofeatured(<?php echo $data['id'] ?>)><i class="fa-solid fa-toggle-on"></i></a>
+                            <?php } ?>
+                        </td>
+                        <td>
+                            <a style="font-size:1.6rem; color:#00a1ff;" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;
+                            <a style="font-size:1.6rem; color:red;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
                         </td>
                     </tr>
                 <?php $sno=$sno+1; }?>
@@ -59,5 +92,3 @@ $query=$db->query('SELECT * from courses');
         </table>
     </div>
     <?php include 'include/footer.php';?>
-</body>
-</html>

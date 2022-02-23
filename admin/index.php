@@ -25,8 +25,6 @@
   </div>
 </div>
 <?php include "include/footer.php"?>
-</body>
-</html>
 <?php
 require_once 'include/db.php';
 if ($_SERVER['REQUEST_METHOD']==='POST') {

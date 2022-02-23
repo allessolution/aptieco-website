@@ -7,10 +7,13 @@
 include 'include/header.php';
 ?>
 <?php 
-require_once 'include/db.php';
-$query=$db->query('SELECT * from courses');
-$data=$query->fetchall();
-$conut=count($data);
+function size($table_name)
+{
+  include 'include/db.php';
+  $query=$db->query('SELECT * from '.$table_name);
+  $data=$query->fetchall();
+  return count($data);
+}
 ?>
 <body>
     <?php include 'include/nav.php';?>
@@ -24,7 +27,7 @@ $conut=count($data);
             <div class="card-body text-center">
               <h1 class="card-title"><i class="fa-solid fa-book"></i></h1>
               <p class="card-text">Number Of Courses</p>
-              <h2><?php echo $conut ?></h2>
+              <h2><?php echo size('courses') ?></h2>
             </div>
           </div>
         </div>
@@ -33,7 +36,7 @@ $conut=count($data);
             <div class="card-body text-center">
               <h1 class="card-title"><i class="fa-solid fa-user"></i></h1>
               <p class="card-text">Number Of Admins</p>
-              <h2>10</h2>
+              <h2><?php echo size('admin') ?></h2>
             </div>
           </div>
         </div>
@@ -58,5 +61,3 @@ $conut=count($data);
       </div>
     </div>
     <?php include 'include/footer.php';?>
-</body>
-</html>
