@@ -3,12 +3,12 @@
         <div class="box-container">
 
             <div class="box">
-                <h3>#Popular Courses</h3>
-                <a href="#"> <i class="fas fa-book"></i> C Language </a>
-                <a href="#"> <i class="fas fa-book"></i> Web Development </a>
-                <a href="#"> <i class="fas fa-book"></i> Mechatronics </a>
-                <a href="#"> <i class="fas fa-book"></i> Graphic Designing </a>
-                <a href="#"> <i class="fas fa-book"></i> Digital Marketing </a>
+                <h3>#Recommended Courses</h3>
+                <a href="courses.php"> <i class="fas fa-book"></i> C Language </a>
+                <a href="courses.php"> <i class="fas fa-book"></i> Web Development </a>
+                <a href="courses.php"> <i class="fas fa-book"></i> Mechatronics </a>
+                <a href="courses.php"> <i class="fas fa-book"></i> Graphic Designing </a>
+                <a href="courses.php"> <i class="fas fa-book"></i> Digital Marketing </a>
             </div>
 
             <div class="box">
