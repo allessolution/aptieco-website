@@ -283,7 +283,7 @@ $query=$db->query('SELECT * from courses where featured=1');
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="assets/image/pic-1.png" alt="">
+                    <img src="assets/image/students/ayush.jpeg" alt="">
                     <div class="content">
                         <p>Very nicely explained bootcamp...after the completion of my course..i must say my graphic
                             designing skills are at top notch level!!!</p>
