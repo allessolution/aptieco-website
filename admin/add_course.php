@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
   // Check file size
   else if ($_FILES["fileToUpload"]["size"] > 2000000) {
-   alert2("Sorry, your file is too large.",'danger');
+   alert2("File size should be less than 2mb.",'danger');
     $uploadOk = 0;
     $error[]=1;
   }

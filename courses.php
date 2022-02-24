@@ -4,7 +4,7 @@
 </head>
 <?php 
 include 'include/db.php';
-$query=$db->query('SELECT * from courses where featured=1');
+$query=$db->query('SELECT * from courses');
 ?>
 <body>
     <?php include 'include/nav.php' ?>
