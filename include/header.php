@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aptieco</title>
     <!-- fav icon start -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/image/fav.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/image/fav.ico/apple-icon-60x60.png">
@@ -32,5 +31,3 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-</head>

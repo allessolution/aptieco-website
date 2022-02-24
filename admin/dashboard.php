@@ -44,8 +44,8 @@ function size($table_name)
           <div class="card h-100">
             <div class="card-body text-center">
               <h1 class="card-title"><i class="fa-solid fa-users"></i></h1>
-              <p class="card-text">Number Of Users</p>
-              <h2>10</h2>
+              <p class="card-text">Number Of Teachers</p>
+              <h2>?</h2>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ function size($table_name)
             <div class="card-body text-center">
               <h1 class="card-title"><i class="fa-solid fa-graduation-cap"></i></h1>
               <p class="card-text">Number Of Students</p>
-              <h2>10</h2>
+              <h2>?</h2>
             </div>
           </div>
         </div>

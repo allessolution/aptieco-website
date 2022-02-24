@@ -1,4 +1,7 @@
 <?php include 'include/header.php' ?>
+<title>About - Aptieco</title>
+<!-- seo tags here -->
+</head>
 <body>
     <?php include 'include/nav.php' ?>
     <section class="all-members">
