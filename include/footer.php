@@ -43,7 +43,7 @@
     </section>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
-    <script src="assets/js/script.js"></script>
-<script src="//code.tidio.co/xtnxamdxjkpuxa5djeo6jh2gpec1ebpj.js" async></script>
+    <script src="./assets/js/script.js"></script>
+<script src="https://code.tidio.co/xtnxamdxjkpuxa5djeo6jh2gpec1ebpj.js" async></script>
 </body>
 </html>
