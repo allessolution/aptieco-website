@@ -39,7 +39,7 @@ echo '</url>' . PHP_EOL;
 
 while($data = $courses->fetch()){
  echo '<url>' . PHP_EOL;
- echo '<loc>'.$page_base_url.$row["id"] .'</loc>' . PHP_EOL;
+ echo '<loc>'.$courses_base_url.$data["id"] .'</loc>' . PHP_EOL;
  echo '<changefreq>daily</changefreq>' . PHP_EOL;
  echo '</url>' . PHP_EOL;
 }
