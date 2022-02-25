@@ -9,9 +9,9 @@
         <nav class="navbar">
             <!-- class="active" will used with jquery validation -->
             <a href="./">home</a>
-            <a href="./courses.php">courses</a>
-            <a href="./contactus.php">contact</a>
-            <a href="./aboutus.php">About</a>
+            <a href="./courses">courses</a>
+            <a href="./contactus">contact</a>
+            <a href="./aboutus">About</a>
         </nav>
 
         <!-- <div id="login-btn">

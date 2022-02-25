@@ -4,19 +4,19 @@
 
             <div class="box">
                 <h3>#Recommended Courses</h3>
-                <a href="courses.php"> <i class="fas fa-book"></i> C Language </a>
-                <a href="courses.php"> <i class="fas fa-book"></i> Web Development </a>
-                <a href="courses.php"> <i class="fas fa-book"></i> Mechatronics </a>
-                <a href="courses.php"> <i class="fas fa-book"></i> Graphic Designing </a>
-                <a href="courses.php"> <i class="fas fa-book"></i> Digital Marketing </a>
+                <a href="courses"> <i class="fas fa-book"></i> C Language </a>
+                <a href="courses"> <i class="fas fa-book"></i> Web Development </a>
+                <a href="courses"> <i class="fas fa-book"></i> Mechatronics </a>
+                <a href="courses"> <i class="fas fa-book"></i> Graphic Designing </a>
+                <a href="courses"> <i class="fas fa-book"></i> Digital Marketing </a>
             </div>
 
             <div class="box">
                 <h3>#quick links</h3>
                 <a href="./"><i class="fas fa-arrow-right"></i>home</a>
-                <a href="./courses.php"><i class="fas fa-arrow-right"></i>courses</a>
-                <a href="./ourteam.php"><i class="fas fa-arrow-right"></i>About Us</a>
-                <a href="./contactus.php"><i class="fas fa-arrow-right"></i>contact us</a>
+                <a href="./courses"><i class="fas fa-arrow-right"></i>courses</a>
+                <a href="./ourteam"><i class="fas fa-arrow-right"></i>About Us</a>
+                <a href="./contactus"><i class="fas fa-arrow-right"></i>contact us</a>
             </div>
 
             <div class="box">
