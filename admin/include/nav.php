@@ -23,6 +23,9 @@
             <a class="nav-link" aria-current="page" href="change_password.php">Change Password</a>
           </li>
         </ul>
+        <a href="../" target="_blank">
+          <i class="fa-solid fa-eye"></i>
+        </a>
         <a href="logout.php">
           <i class="fa-solid fa-right-from-bracket"></i>
         </a>
