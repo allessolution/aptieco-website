@@ -64,9 +64,9 @@ $query=$db->query('SELECT * from courses');
                 <tr>
                 <th scope="col">S.no</th>
                 <th scope="col">Course Heading</th>
-                <th scope="col">Added By</th>
+                <th scope="col">Last Edit By</th>
                 <th scope="col">Featured</th>
-                <th scope="col">Featured Image</th>
+                <th scope="col">Image</th>
                 <th scope="col">Edit/Delete</th>
                 <th scope="col">View Course</th>
                 </tr>
