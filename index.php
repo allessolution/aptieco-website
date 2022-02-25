@@ -49,7 +49,7 @@ $query=$db->query('SELECT * from courses where featured=1');
         <div class="icons">
             <i class="fas fa-users"></i>
             <div class="content">
-                <h3>500+</h3>
+                <h3>1500+</h3>
                 <p>happy students</p>
             </div>
         </div>
@@ -65,7 +65,7 @@ $query=$db->query('SELECT * from courses where featured=1');
         <div class="icons">
             <i class="fas fa-book"></i>
             <div class="content">
-                <h3>100+</h3>
+                <h3>500+</h3>
                 <p>currenlty studying</p>
             </div>
         </div>
