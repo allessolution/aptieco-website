@@ -5,9 +5,13 @@
 Minds And Enable Them To Make Choices To Explore A Future They Deserve.">
 
 <meta property="og:title" content="Courses - Aptieco" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="https://aptieco.com/courses.php" />
 <meta property="og:image" content="https://aptieco.com/assets/image/ogimage.webp" />
+<meta property="og:image:width" content="526" />
+<meta property="og:image:height" content="275" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta property="og:description" content="We're Aptieco, Team Of Passionate, Experienced And Dedicated People Vision To Accredit Young
 Minds And Enable Them To Make Choices To Explore A Future They Deserve." />
 <meta property="og:site_name" content="Courses - Aptieco" />
