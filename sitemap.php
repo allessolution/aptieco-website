@@ -8,7 +8,7 @@ $courses = $db->query('SELECT * FROM courses ORDER BY id ASC');
 //Main URL 
 $base_url = "http://aptieco.com";
 //Page base URL 
-$courses_base_url = "https://aptieco.com/courses.php?id=";
+$courses_base_url = "https://aptieco.com/courses?id=";
 
 
 
@@ -23,17 +23,17 @@ echo '<changefreq>daily</changefreq>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
-echo '<loc>'.'https://aptieco.com/courses.php'.'</loc>' . PHP_EOL;
+echo '<loc>'.'https://aptieco.com/courses'.'</loc>' . PHP_EOL;
 echo '<changefreq>daily</changefreq>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
-echo '<loc>'.'https://aptieco.com/aboutus.php'.'</loc>' . PHP_EOL;
+echo '<loc>'.'https://aptieco.com/aboutus'.'</loc>' . PHP_EOL;
 echo '<changefreq>daily</changefreq>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
-echo '<loc>'.'https://aptieco.com/contactus.php'.'</loc>' . PHP_EOL;
+echo '<loc>'.'https://aptieco.com/contactus'.'</loc>' . PHP_EOL;
 echo '<changefreq>daily</changefreq>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
