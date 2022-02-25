@@ -25,6 +25,9 @@ $query=$db->query('SELECT * from courses');
     function nofeatured(sno) {
         window.location.href="courses.php?remove_feature="+sno
     }
+    function image(sno) {
+        window.location.href="edit_fimage.php?f_image="+sno
+    }
 </script>
 <?php 
     if (isset($_GET['del'])) {
@@ -51,11 +54,11 @@ $query=$db->query('SELECT * from courses');
 ?>
 <body>
     <?php include 'include/nav.php';?>
-    <div class="table-responsive custom-table">
-        <center>
+    <center>
             <h2>All Courses</h2>
             <a href="add_course.php"><button class="btn"><i class="fa-solid fa-circle-plus"></i> Add New Course</button></a>
         </center>
+    <div class="table-responsive custom-table">
         <table class="table">
             <thead>
                 <tr>
@@ -63,7 +66,9 @@ $query=$db->query('SELECT * from courses');
                 <th scope="col">Course Heading</th>
                 <th scope="col">Added By</th>
                 <th scope="col">Featured</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Featured Image</th>
+                <th scope="col">Edit/Delete</th>
+                <th scope="col">View Course</th>
                 </tr>
             </thead>
             <tbody>
@@ -83,8 +88,14 @@ $query=$db->query('SELECT * from courses');
                             <?php } ?>
                         </td>
                         <td>
+                            <a style="font-size:1.6rem; color:black; cursor:pointer;" onclick=image(<?php echo $data['id'] ?>)><i class="fa-solid fa-image"></i></a>
+                        </td>
+                        <td>
                             <a style="font-size:1.6rem; color:#00a1ff; cursor:pointer;" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;
                             <a style="font-size:1.6rem; color:red; cursor:pointer;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
+                        </td>
+                        <td>
+                            <a style="font-size:1.6rem; color:#00a1ff; cursor:pointer;" href="../course_details.php?id=<?php echo $data['id']?>" target="_blank"><i class="fa-solid fa-eye"></i></a>
                         </td>
                     </tr>
                 <?php $sno=$sno+1; }?>

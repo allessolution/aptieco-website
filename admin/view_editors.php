@@ -31,11 +31,11 @@ $query=$db->query('SELECT * from admin');
 ?>
 <body>
     <?php include 'include/nav.php';?>
-    <div class="table-responsive custom-table">
-        <center>
-            <h2>All Admins</h2>
+    <center>
+            <h2>All Editors</h2>
             <a href="add_editor.php"><button class="btn"><i class="fa-solid fa-circle-plus"></i> Add New Editor</button></a>
         </center>
+    <div class="table-responsive custom-table">
         <table class="table">
             <thead>
                 <tr>

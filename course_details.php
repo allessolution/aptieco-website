@@ -6,7 +6,16 @@ $data=$query->fetch();
 ?>
 <?php include 'include/header.php' ?>
 <title><?php echo $data['c_heading']?> - Aptieco</title>
-<!-- seo tags here -->
+<!-- seo tags here start -->
+<meta name="description" content="<?php echo $data['c_heading']?>">
+
+<meta property="og:title" content="<?php echo $data['c_heading']?> - Aptieco" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aptieco.com/course_details.php?id=<?php echo $data['id']?>" />
+<meta property="og:image" content="https://aptieco.com/assets/image/courses/<?php echo $data['image']?>" />
+<meta property="og:description" content="<?php echo $data['c_heading']?>" />
+<meta property="og:site_name" content="<?php echo $data['c_heading']?> - Aptieco" />
+<!-- seo tags ends -->
 </head>
 <body>
 <?php include 'include/nav.php' ?>

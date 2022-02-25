@@ -56,6 +56,7 @@ body{
 }
 /* nav bar */
 .navbar i{
+    margin-left: .5rem;
     padding: .5rem;
     border-radius: 5px;
     color: var(--black);

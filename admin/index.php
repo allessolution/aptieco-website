@@ -20,6 +20,7 @@
           <input type="password" name="pwd" class="form-control" placeholder="Password">
           <label for="floatingPassword">Password</label>
         </div>
+      <p>Not an admin? Back to <a href="../">aptieco.com</a></p>
       <button type="submit" class="btn btn-primary"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
     </form>
   </div>

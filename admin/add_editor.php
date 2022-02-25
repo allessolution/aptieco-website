@@ -1,7 +1,7 @@
 <!-- session check -->
 <?php 
   session_start();
-  if (empty($_SESSION['user'])) {
+  if (empty($_SESSION['user']) || $_SESSION['user']=='editor') {
     header('location:./');
   }
 include 'include/header.php';

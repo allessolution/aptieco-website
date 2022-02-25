@@ -177,7 +177,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
         </select>
         <label for="floatingSelect">Course Duration</label>
       </div>
-      <button type="submit" class="btn"><i class="fa-solid fa-circle-plus"></i> Sumbit</button>
+      <button type="submit" class="btn"><i class="fa-solid fa-circle-plus"></i> Submit</button>
     </form>
   </div>
   <?php include 'include/footer.php';?>
