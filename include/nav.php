@@ -26,7 +26,7 @@
         <span id="close-login-form" class="fas fa-times"></span>
 
         <form action="">
-            <img src="./image/logo.png" style="width: 60px; height: 60px;" alt="aptieco">
+            <img src="assets/image/logo.png" style="width: 60px; height: 60px;" alt="aptieco">
             <h3>user login</h3>
             <input type="email" placeholder="email" class="box">
             <input type="password" placeholder="password" class="box">
