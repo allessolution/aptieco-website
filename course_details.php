@@ -10,9 +10,13 @@ $data=$query->fetch();
 <meta name="description" content="<?php echo $data['c_heading']?>">
 
 <meta property="og:title" content="<?php echo $data['c_heading']?> - Aptieco" />
-<meta property="og:type" content="article" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="https://aptieco.com/course_details.php?id=<?php echo $data['id']?>" />
 <meta property="og:image" content="https://aptieco.com/assets/image/courses/<?php echo $data['image']?>" />
+<meta property="og:image:width" content="526" />
+<meta property="og:image:height" content="275" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta property="og:description" content="<?php echo $data['c_heading']?>" />
 <meta property="og:site_name" content="<?php echo $data['c_heading']?> - Aptieco" />
 <!-- seo tags ends -->
