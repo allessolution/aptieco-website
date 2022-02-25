@@ -6,7 +6,7 @@ Minds And Enable Them To Make Choices To Explore A Future They Deserve.">
 
 <meta property="og:title" content="Courses - Aptieco" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://aptieco.com/courses.php" />
+<meta property="og:url" content="https://aptieco.com/courses" />
 <meta property="og:image" content="https://aptieco.com/assets/image/ogimage.webp" />
 <meta property="og:image:width" content="526" />
 <meta property="og:image:height" content="275" />
@@ -33,7 +33,7 @@ $query=$db->query('SELECT * from courses');
                     <h3><?php echo $data['c_heading'] ?></h3>
                     <p> Last updated: <?php echo $data['date'] ?></p>
                     <div class="price">₹<?php echo $data['c_fee'] ?>/-</div>
-                    <a href="course_details.php?id=<?php echo $data['id']?>"><button class="btn">View Details</button></a>
+                    <a href="course_details?id=<?php echo $data['id']?>"><button class="btn">View Details</button></a>
                 </div>
             </div>
         <?php } ?>

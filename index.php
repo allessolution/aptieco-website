@@ -32,7 +32,7 @@ $query=$db->query('SELECT * from courses where featured=1');
         <br>
         <br>
         <button class="btn" id="login-btn" onclick=courses()>Enroll Now</button>&nbsp;&nbsp;&nbsp;
-        <a href="courses.php"><button class="btn">View Courses</button></a>
+        <a href="courses"><button class="btn">View Courses</button></a>
 
     </section>
 
@@ -92,7 +92,7 @@ $query=$db->query('SELECT * from courses where featured=1');
                             <span class="fas fa-circle"></span> SQL
                             <span class="fas fa-circle"></span> JS
                         </p>
-                        <a href="courses.php"><button class="btn">Explore course</button></a>
+                        <a href="courses"><button class="btn">Explore course</button></a>
                     </div>
                 </div>
 
@@ -108,7 +108,7 @@ $query=$db->query('SELECT * from courses where featured=1');
                             <span class="fas fa-circle"></span> SEM
                             <span class="fas fa-circle"></span> Online content & Blogging
                         </p>
-                        <a href="courses.php"><button class="btn">Explore course</button></a>
+                        <a href="courses"><button class="btn">Explore course</button></a>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@ $query=$db->query('SELECT * from courses where featured=1');
                             <span class="fas fa-circle"></span> Loops & Arrays
                             <span class="fas fa-circle"></span> Functions
                         </p>
-                        <a href="courses.php"><button class="btn">Explore course</button></a>
+                        <a href="courses"><button class="btn">Explore course</button></a>
                     </div>
                 </div>
 
@@ -196,7 +196,7 @@ $query=$db->query('SELECT * from courses where featured=1');
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
                             <div class="price">₹<?php echo $data['c_fee'] ?>/-</div>
-                            <a href="course_details.php?id=<?php echo $data['id']?>"><button class="btn">View Details</button></a>
+                            <a href="course_details?id=<?php echo $data['id']?>"><button class="btn">View Details</button></a>
                         </div>
                     </div>
                 <?php }?>

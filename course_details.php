@@ -11,7 +11,7 @@ $data=$query->fetch();
 
 <meta property="og:title" content="<?php echo $data['c_heading']?> - Aptieco" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://aptieco.com/course_details.php?id=<?php echo $data['id']?>" />
+<meta property="og:url" content="https://aptieco.com/course_details?id=<?php echo $data['id']?>" />
 <meta property="og:image" content="https://aptieco.com/assets/image/courses/<?php echo $data['image']?>" />
 <meta property="og:image:width" content="526" />
 <meta property="og:image:height" content="275" />
@@ -24,7 +24,7 @@ $data=$query->fetch();
 <body>
 <?php include 'include/nav.php' ?>
     <section class="course-details" id="home">
-        <p style="margin:2rem 0rem"><a style="color:black;" href="courses.php">Courses</a> /<a class="active" href="course_details.php?id=<?php echo $data['id'] ?>">Course Detail</a></p>
+        <p style="margin:2rem 0rem"><a style="color:black;" href="courses">Courses</a> /<a class="active" href="course_details?id=<?php echo $data['id'] ?>">Course Detail</a></p>
         <img src="assets/image/courses/<?php echo $data['image'] ?>" alt="">
         <h1><?php echo $data['c_heading'] ?></h1>
         <h3>Course Information</h3>
@@ -62,7 +62,7 @@ $data=$query->fetch();
                 <div class="content">
                     <h3><?php echo $data2['c_heading'] ?></h3>
                     <div class="price">₹<?php echo $data2['c_fee'] ?>/-</div>
-                    <a href="course_details.php?id=<?php echo $data2['id']?>"><button class="btn">View Details</button></a>
+                    <a href="course_details?id=<?php echo $data2['id']?>"><button class="btn">View Details</button></a>
                 </div>
             </div>
         <?php
