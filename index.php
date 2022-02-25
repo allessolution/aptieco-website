@@ -1,6 +1,17 @@
 <?php include 'include/header.php' ?>
 <title>Aptieco</title>
-<!-- seo tags here -->
+<!-- seo tags start -->
+<meta name="description" content="We're Aptieco, Team Of Passionate, Experienced And Dedicated People Vision To Accredit Young
+Minds And Enable Them To Make Choices To Explore A Future They Deserve.">
+
+<meta property="og:title" content="Aptieco" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aptieco.com/" />
+<meta property="og:image" content="https://aptieco.com/assets/image/ogimage.webp" />
+<meta property="og:description" content="We're Aptieco, Team Of Passionate, Experienced And Dedicated People Vision To Accredit Young
+Minds And Enable Them To Make Choices To Explore A Future They Deserve." />
+<meta property="og:site_name" content="Aptieco" />
+<!-- seo tags ends -->
 </head>
 <?php 
 include 'include/db.php';
