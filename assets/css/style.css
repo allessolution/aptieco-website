@@ -106,7 +106,7 @@ section{
 }
 
 .header .logo{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--black);
     font-weight: bold;
 }
@@ -139,7 +139,7 @@ section{
 
 #login-btn i{
     display: none;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--light-color);
 }
 
@@ -149,7 +149,7 @@ section{
 }
 
 #menu-btn{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--light-color);
     display: none;
 }
@@ -217,7 +217,7 @@ section{
 
 .login-form-container form h3{
     padding-bottom:1rem;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--black);
     text-transform: uppercase;
 }
@@ -278,7 +278,7 @@ section{
 }
 
 .icons-container .icons .content h3{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--blue);
 }
 
@@ -332,12 +332,12 @@ section{
 }
 
 .courses .courses-slider .box .content h3{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--black);
 }
 
 .courses .courses-slider .box .content .price{
-    font-size: 2.1rem;
+    font-size: 2.4rem;
     color:var(--blue);
     padding:1rem 0;
     font-weight: bolder;
@@ -386,7 +386,7 @@ section{
     width:6rem;
     line-height: 6rem;
     border-radius: 50%;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
     background:#f0f0f0;
     color:var(--black);
@@ -439,7 +439,7 @@ section{
     width:6rem;
     line-height: 6rem;
     border-radius: 50%;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
     background:white;
     color:var(--black);
@@ -464,12 +464,17 @@ section{
     transform: scale(.95);
 }
 
+.all-courses .box-container .box .content .price{
+    font-size: 2.4rem;
+    color:var(--black);
+}
+
 .recommended-courses h1{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: var(--black);
 }
 .recommended-courses .box-container .box .content .price{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--black);
 }
 .recommended-courses .box-container{
@@ -489,7 +494,7 @@ section{
     width:6rem;
     line-height: 6rem;
     border-radius: 50%;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
     background:white;
     color:var(--black);
@@ -515,7 +520,7 @@ section{
 }
 
 .recommended-courses .box-container .box .content .price{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--black);
 }
 .featured .featured-slider{
@@ -554,7 +559,7 @@ section{
 }
 
 .featured .featured-slider .box .content .price{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color:var(--black);
 }
 .contact{
@@ -587,7 +592,7 @@ section{
     color: var(--black);
 }
 .course-details h3{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     border-bottom: 1px solid #ccc;
     padding: 10px 0px;
     color: var(--blue);
@@ -651,7 +656,7 @@ section{
     width:6rem;
     line-height: 6rem;
     border-radius: 50%;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     margin-bottom: 1rem;
     background:white;
     color:var(--black);
