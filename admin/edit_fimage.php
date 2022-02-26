@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
       $query->execute(array(
         $image
       ));
-      alert2('Course Added Sucessfully','success');
+      alert2('Featured Image Updated Sucessfully','success');
       header( "refresh:1;url=courses.php" );
     } else {
       alert2("Sorry, there was an error in uploading data",'danger');
