@@ -44,8 +44,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
   // Allow certain file formats
   else if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
-  && $imageFileType != "gif" ) {
-    alert2("Sorry, only JPG, JPEG, PNG & GIF files are allowed.",'danger');
+  && $imageFileType != "gif" && $imageFileType != "webp" ) {
+    alert2("Sorry, only JPG, JPEG, PNG, WEBP & GIF files are allowed.",'danger');
     $uploadOk = 0;
     $error[]=1;
   }
