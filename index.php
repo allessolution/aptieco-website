@@ -281,12 +281,12 @@ $query=$db->query('SELECT * from courses where featured=1');
                 </div>
 
                 <div class="swiper-slide box">
-                    <img src="assets/image/pic-1.png" alt="">
+                    <img src="assets/image/students/shivansh.jpg" alt="">
                     <div class="content">
                         <p>From this 4 weeks long digital marketing bootcamp, I learned far more than I did from the
                             4-year on-campus studying. My digital marketing skills has improved so much. I would highly
                             recommend my peers to join aptieco's bootcamp ASAP!!!</p>
-                        <h3>Akanksha</h3>
+                        <h3>Shivansh</h3>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
