@@ -12,7 +12,7 @@ $query=$db->query('SELECT * from admin');
 ?>
 <script>
     function edit(sno) {
-        window.location.href="edit_admin.php?edit="+sno
+        window.location.href="edit_editor.php?edit="+sno
     }
     function del(sno) {
         if (confirm('Do you Really Want to delete?')) {
@@ -42,7 +42,7 @@ $query=$db->query('SELECT * from admin');
                 <th scope="col">S.no</th>
                 <th scope="col">Username</th>
                 <th scope="col">Type</th>
-                <th scope="col">Actions</th>
+                <th scope="col">Edit/Delete</th>
                 </tr>
             </thead>
             <tbody>
@@ -55,6 +55,7 @@ $query=$db->query('SELECT * from admin');
                         <td><?php echo $data['username'] ?></td>
                         <td><?php echo $data['type'] ?></td>        
                         <td>
+                        <a style="font-size:1.6rem; color:#00a1ff; cursor:pointer;" onclick=edit(<?php echo $data['id'] ?>)><i class="fa-solid fa-pen-to-square"></i></a>&nbsp; &nbsp;
                             <a style="font-size:1.6rem; color:red; cursor:pointer;" onclick=del(<?php echo $data['id'] ?>)><i class="fa-solid fa-trash"></i></a>
                         </td>
                     <?php }?>
