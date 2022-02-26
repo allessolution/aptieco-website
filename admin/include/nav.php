@@ -14,7 +14,7 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="courses.php">All Courses</a>
           </li>
-          <?php if ($_SESSION['user']!='editor') { ?>
+          <?php if ($_SESSION['user']=='admin') { ?>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="view_editors.php">All Editors</a>
           </li>
