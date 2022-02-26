@@ -60,9 +60,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file) and rename($target_del, $move_del_dir . pathinfo($target_del, PATHINFO_BASENAME))) {
       require_once('include/db.php');
-      $query=$db->prepare('UPDATE courses SET image=?');
+      $query=$db->prepare('UPDATE courses SET image=? where id=?');
       $query->execute(array(
-        $image
+        $image,
+        $f_image
       ));
       alert2('Featured Image Updated Sucessfully','success');
       header( "refresh:1;url=courses.php" );
