@@ -7,7 +7,7 @@ $data=$query->fetch();
 <?php include 'include/header.php' ?>
 <title><?php echo $data['c_heading']?> - Aptieco</title>
 <!-- seo tags here start -->
-<meta name="description" content="<?php echo $data['c_heading']?>">
+<meta name="description" content="<?php echo $data['seo_desc']?>">
 
 <meta property="og:title" content="<?php echo $data['c_heading']?> - Aptieco" />
 <meta property="og:type" content="website" />
@@ -17,7 +17,7 @@ $data=$query->fetch();
 <meta property="og:image:height" content="275" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="og:description" content="<?php echo $data['c_heading']?>" />
+<meta property="og:description" content="<?php echo $data['seo_desc']?>" />
 <meta property="og:site_name" content="<?php echo $data['c_heading']?> - Aptieco" />
 <!-- seo tags ends -->
 </head>
