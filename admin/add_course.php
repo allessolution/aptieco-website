@@ -19,6 +19,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   $c_crfee=$_POST['c_rfee'];
   $c_cfee=$_POST['c_fee'];
   $c_desc=$_POST['c_desc'];
+  $seo_desc=$_POST['seo_desc'];
   $c_duration=$_POST['c_duration'];
   $c_addedby=$_SESSION['username'];
   $date=date("Y-m-d H:i:s");
@@ -56,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
       require_once('include/db.php');
-      $query=$db->prepare('INSERT INTO courses (c_heading, c_rfee, c_fee, c_desc, c_duration, c_addedby, date, image) VALUES (?,?,?,?,?,?,?,?);');
+      $query=$db->prepare('INSERT INTO courses (c_heading, c_rfee, c_fee, c_desc, c_duration, c_addedby, date, image, seo_desc) VALUES (?,?,?,?,?,?,?,?,?);');
       $query->execute(array(
         $c_heading,
         $c_crfee,
@@ -65,7 +66,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
         $c_duration,
         $c_addedby,
         $date,
-        $image
+        $image,
+        $seo_desc
       ));
       alert2('Course Added Sucessfully','success');
       header( "refresh:1;url=courses.php" );
@@ -160,6 +162,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
       <div class="form-floating mb-3">
         <input type="text" class="form-control" name="c_fee" value="<?php if(isset($error)){ echo $_POST['c_fee'];}?>" placeholder="Course Fee">
         <label for="floatingInput">Course Fee <i class="fa-solid fa-indian-rupee-sign"></i></label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="seo_desc" value="<?php if(isset($error)){ echo $_POST['seo_desc'];}?>" placeholder="SEO Description">
+        <label for="floatingInput">SEO Description</label>
       </div>
       <div class="form-floating mb-3">
         <textarea class="form-control" name="c_desc" id="mytextarea" placeholder="Course Description" style="height: 350px"><?php if(isset($error)){ echo $_POST['c_desc'];}?></textarea>
