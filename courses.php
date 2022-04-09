@@ -41,3 +41,5 @@ $query=$db->query('SELECT * from courses');
 
     </section>
 <?php include 'include/footer.php' ?>
+</body>
+</html>
