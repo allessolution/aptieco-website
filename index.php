@@ -338,3 +338,5 @@ $query=$db->query('SELECT * from courses where featured=1');
 
     </section>
 <?php include 'include/footer.php' ?>
+</body>
+</html>

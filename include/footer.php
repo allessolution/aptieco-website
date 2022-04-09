@@ -45,5 +45,3 @@
 
     <script src="./assets/js/script.js"></script>
 <script src="https://code.tidio.co/xtnxamdxjkpuxa5djeo6jh2gpec1ebpj.js" async></script>
-</body>
-</html>
